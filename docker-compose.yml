@@ -1,0 +1,11 @@
+version: "3"
+services:
+  whl_package:
+    image: whl_package_image
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: whl_package_container
+
+    volumes:
+      - .:/workspace:cached

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  whl_package:
+    volumes:
+      - .:/workspace:cached
+      
+      # - /tmp/.X11-unix:/tmp/.X11-unix
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+    entrypoint: ""
