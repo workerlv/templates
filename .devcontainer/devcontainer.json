@@ -1,0 +1,26 @@
+{
+	"name": "Existing Docker Compose (Extend)", // TODO: CHANGE NAME 
+
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.extend.yml"
+	],
+	
+	"service": "template-service", // TODO: CHANGE NAME (add same in docker-compose yaml files)
+
+	"workspaceFolder": "/workspace",
+
+	"customizations": {"vscode": {
+            "extensions": [
+                "ms-python.python",
+                "eamodio.gitlens",
+                "ms-python.black-formatter",
+                "codeium.codeium",
+				"Gruntfuggly.todo-tree"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "python.defaultInterpreterPath": "/opt/conda/bin/python"
+            }
+        }}
+}

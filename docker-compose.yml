@@ -1,0 +1,11 @@
+version: "3"
+services:
+  template-service: # TODO: CHANGE NAME
+    image: template_image # TODO: CHANGE NAME
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: template_container # TODO: CHANGE NAME
+
+    volumes:
+      - .:/workspace:cached
