@@ -2,7 +2,7 @@
 
 ## branche:
 
-### docker_conatiener
+### docker_container
 * empty docker devcontainer with python image
 
 ### readme
